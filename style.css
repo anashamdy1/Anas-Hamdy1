@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --color-1:#033b4a;
+    --color-2:#20c997;
+    --color-3:#4a4a4d;
+    --color-4:#ecf0f3;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+a{
+text-decoration: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    border-bottom: 1px solid #79afd8;
+    background-color: #4991a3;
+}
+.navbar img{
+    width: 240px;
+    padding-top: 10px;
+}
+.navbar ul{
+    display: flex;
+    padding-right: 40px;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: var(--color-1);
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.navbar ul li a:hover{
+    border-bottom: #20c997 solid;
+}
+.navbar .logo{
+    padding-left: 40px;
+    font-size: 30px;
+    color: var(--color-1);
+    font-weight: 500;
+}
+.header-contact{
+    padding-left: 100px;
+    padding-top: 200px;
+    background-image: url(./خلفيه.png) ;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+.header-contact .contact-text h1{
+    color: #6DC7DD;
+    font-size: 50px;
+}
+.header-contact .contact-text p{
+    font-size: 30px;
+    color: var(--color-2);
+}
+.header-contact .contact-text .title{
+    padding-bottom: 20px;
+    font-size: 20px ;
+    color: #F0B71D;
+}
+.header-contact .social{
+    display: flex;
+    flex-direction: column;
+}
+.header-contact .social a{
+    margin-left: 13px;
+    margin-bottom: 15px;
+    width: 110px;
+    
+}
+.header-contact .social a:hover{
+    border-radius: 3px ;
+    background-color: #033b4a;
+}
+.header-contact .social a i{
+    color: #c3ecf7;
+    font-size: 23px;
+}
+.header-contact .social a  span{
+    padding-left: 10px;
+    color: rgb(188, 213, 218);
+    font-size: 15px;
+}
+@media ( max-width:768px ){
+    .navbar{
+        display: block;
+        align-items: center;
+        height: 90px;
+    }
+    .navbar img{
+        display: none;
+    }
+    .navbar ul{
+        display: flex;
+        justify-content: center;
+        padding-left: 40px;
+        align-items: center;
+
+    }
+    .navbar .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    div.header-contact{
+        width: auto;
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+    .header-contact{
+        background-image: url(./خلفيه\ -تابلت.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+    }
+  
+}
+
+
